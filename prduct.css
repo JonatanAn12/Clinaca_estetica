@@ -1,0 +1,68 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('https://img.freepik.com/vector-gratis/fondo-collage-dibujado-mano_23-2149576731.jpg');
+  background-size: cover;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.background {
+  animation: animatedBackground 10s linear infinite;
+}
+
+#catalog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .product-container {
+    display: inline-block;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
